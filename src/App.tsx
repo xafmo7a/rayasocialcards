@@ -1,5 +1,6 @@
 import { motion } from "motion/react";
 import { Facebook, Linkedin, Youtube, Instagram, ExternalLink, Globe } from "lucide-react";
+import profilePic from "./assets/ceb915a6-64f9-4fef-a479-db2e2e742551.png";
 
 const SOCIAL_LINKS = [
   {
@@ -63,7 +64,7 @@ export default function App() {
             
             <div className="relative w-52 h-52 rounded-full overflow-hidden border-[1px] border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
               <img 
-                src="/ceb915a6-64f9-4fef-a479-db2e2e742551.png" 
+                src={profilePic} 
                 alt="Raya Ani" 
                 className="w-full h-full object-cover grayscale brightness-90 hover:grayscale-0 hover:brightness-100 transition-all duration-1000"
                 referrerPolicy="no-referrer"
