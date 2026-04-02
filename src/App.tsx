@@ -1,6 +1,6 @@
 import { motion } from "motion/react";
 import { Facebook, Linkedin, Youtube, Instagram, ExternalLink, Globe } from "lucide-react";
-import profilePic from "./assets/ceb915a6-64f9-4fef-a479-db2e2e742551.png";
+import profilePic from "./assets/profile.png";
 
 const SOCIAL_LINKS = [
   {
@@ -67,7 +67,9 @@ export default function App() {
                 src={profilePic} 
                 alt="Raya Ani" 
                 className="w-full h-full object-cover grayscale brightness-90 hover:grayscale-0 hover:brightness-100 transition-all duration-1000"
-                referrerPolicy="no-referrer"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).src = "https://picsum.photos/seed/raya/400/400";
+                }}
               />
             </div>
           </motion.div>
