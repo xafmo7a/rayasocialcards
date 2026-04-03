@@ -21,16 +21,16 @@ const SOCIAL_LINKS = [
     description: "Watch latest videos"
   },
   {
-    name: "Facebook",
-    icon: <Facebook className="w-6 h-6" />,
-    url: "https://web.facebook.com/RAW.NYC.Architects",
-    description: "Connect on Facebook"
-  },
-  {
     name: "Instagram",
     icon: <Instagram className="w-6 h-6" />,
     url: "https://www.instagram.com/rawnycfashion/reels/",
     description: "Daily stories & photography"
+  },
+  {
+    name: "Facebook",
+    icon: <Facebook className="w-6 h-6" />,
+    url: "https://web.facebook.com/RAW.NYC.Architects",
+    description: "Connect on Facebook"
   }
 ];
 
@@ -58,7 +58,7 @@ export default function App() {
             
             <div className="relative w-52 h-52 rounded-none overflow-hidden border-[1px] border-white shadow-[0_20px_50px_rgba(0,0,0,0.8)]">
               <img 
-                src="/profile.png" 
+                src="profile.png" 
                 alt="Raya Ani" 
                 className="w-full h-full object-cover grayscale brightness-90 hover:grayscale-0 hover:brightness-100 transition-all duration-1000"
                 onError={(e) => {
