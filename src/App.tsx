@@ -5,7 +5,7 @@ const SOCIAL_LINKS = [
   {
     name: "Website",
     icon: <Globe className="w-6 h-6" />,
-    url: "https://rayaani.netlify.app/",
+    url: "rayaani-builds.lovable.app",
     description: ""
   },
   {
